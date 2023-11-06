@@ -15,11 +15,13 @@ def send_discord_message(message):
     else:
         print(f"Failed to send message to Discord: {response.status_code}")
 
+send_discord_message("rerun: message should now only be sent once every 10 minutes")
+
 # Main loop
 while True:
     current_time = time.time()
     # Check if the current Unix time is divisible by 60
-    if int(current_time) % 60 == 0:
+    if int(current_time) % 600 == 0:
         # Send the message
         send_discord_message(f"status: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         # Refresh the Git repository
