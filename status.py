@@ -27,4 +27,4 @@ while True:
         subprocess.run(["git", "pull"])
         # Rerun the script
         subprocess.run(["python", "status.py"])  # Replace with your script's filename
-    time.sleep(60)  # Sleep for 60 seconds before checking again
+    # time.sleep(60)  # Sleep for 60 seconds before checking again
