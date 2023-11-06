@@ -15,7 +15,7 @@ def send_discord_message(message):
     else:
         print(f"Failed to send message to Discord: {response.status_code}")
 
-send_discord_message("rerun: message should now only be sent once every 10 minutes")
+# send_discord_message("rerun: message should now only be sent once every 10 minutes")
 
 # Main loop
 while True:
