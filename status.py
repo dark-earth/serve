@@ -21,7 +21,7 @@ def send_discord_message(message):
 while True:
     current_time = time.time()
     # Check if the current Unix time is divisible by 60
-    if int(current_time) % 600 == 0:
+    if int(current_time) % 3600 == 0:
         # Send the message
         send_discord_message(f"status: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         # Refresh the Git repository
